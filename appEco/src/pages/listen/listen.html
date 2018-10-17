@@ -36,10 +36,22 @@
       </ion-item>
       <ion-item color="assertive" id="listen-list-item15">
         <ion-icon name="musical-notes" item-left></ion-icon>
-        Play / Pause
+
       </ion-item>
+
+      <ion-content class="home">
+        <button ion-button dark (click)="play()"> <ion-icon name="play"></ion-icon></button>
+        <button ion-button dark (click)="pause()"> <ion-icon name="pause"></ion-icon></button>
+      </ion-content>
+
     </ion-list>
   </ion-card>
+
+  <ion-content class="home">
+    <button ion-button dark (click)="play()"> <ion-icon name="play"></ion-icon></button>
+    <button ion-button dark (click)="pause()"> <ion-icon name="pause"></ion-icon></button>
+  </ion-content>
+
   <div class="spacer" style="width:300px;height:39px;" id="listen-spacer4"></div>
   <div id="listen-markdown11" class="show-list-numbers-and-dots">
     <p style="color:#000000;">

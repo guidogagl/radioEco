@@ -1,5 +1,7 @@
 {
   "name": "appEco",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

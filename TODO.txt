@@ -1,3 +1,9 @@
-linkare il flusso dati di icecast all'applicazione
-http://listen.radioeco.it:8000/outdoor.ogg
+linkare il flusso dati di icecast all'applicazione http://listen.radioeco.it:8000/outdoor.ogg  ----> FATTO
+
+- sistemare graficamente il player della radio
+- vedere quali dati si possono ricavare dal flusso audio ( nome canzone/programma ecc ) e quali vanno chiesti al server mysql
+- scrivere una classe per interfacciarsi con il server mysql
+- valutare una soluzione per quanto riguarda la parte articoli
+- palinsesto
+- utenti
 
