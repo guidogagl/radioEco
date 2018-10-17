@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Platform, AlertController } from 'ionic-angular';
+import {IonicPage, NavController, NavParams, Platform, AlertController, App} from 'ionic-angular';
 import { RadioPlayer } from '../../radio/radio';
+
+import {TabsPage} from "../../tabs/tabs";
 
 /**
  * Generated class for the Trymap page.
@@ -17,7 +19,7 @@ import { RadioPlayer } from '../../radio/radio';
 export class TrymapPage {
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public player: RadioPlayer) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public player: RadioPlayer, private app: App) {
 
   }
 
@@ -32,5 +34,11 @@ export class TrymapPage {
     console.log('Pause')
   }
 
+
+  rootHome(event){
+    if(!event) event = {};
+
+    this.app.getRootNav().setRoot(TabsPage, {}, {animate: true, direction: 'forward'});
+  }
 }
 
