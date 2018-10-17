@@ -1,0 +1,3 @@
+linkare il flusso dati di icecast all'applicazione
+http://listen.radioeco.it:8000/outdoor.ogg
+
