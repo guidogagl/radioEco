@@ -27,4 +27,8 @@ export class RadioPlayer {
     this.stream.pause();
   };
 
+  progress(){
+    return ( this.stream.currentTime % 100 );
+  }
+
 }

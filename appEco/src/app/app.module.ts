@@ -10,6 +10,7 @@ import { PalinsestoPage } from '../pages/palinsesto/palinsesto';
 import { TrymapPage } from '../pages/listen/listen';
 
 import { StatusBar } from '@ionic-native/status-bar';
+import { ProgressBarComponent } from "../components/progress-bar/progress-bar";
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from "../tabs/tabs";
 
@@ -25,7 +26,8 @@ import { Diagnostic} from "@ionic-native/diagnostic";
     LoginPage,
     SignupPage,
     PalinsestoPage,
-    TrymapPage
+    TrymapPage,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,16 @@
 page-listen {
 
 }
+
+ion-footer, ion-toolbar{
+  height: 30%;
+}
+
+ion-toolbar{
+  position: fixed;
+  margin: 0;
+}
+
+div.scroll-content{
+  position: fixed;
+}

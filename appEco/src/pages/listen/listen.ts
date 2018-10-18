@@ -18,22 +18,34 @@ import {TabsPage} from "../../tabs/tabs";
 })
 export class TrymapPage {
 
+  playing : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public player: RadioPlayer, private app: App) {
-
+    this.playing = false;
   }
 
   play() {
     this.player.play().then(() => {
       console.log('Playing');
     });
+
+    this.playing = true;
   }
 
   pause() {
     this.player.pause();
     console.log('Pause')
+
+    this.playing = false;
   }
 
+  progress(){
+    console.log('Progress');
+    if( this.playing )
+      this.player.progress();
+    else
+      return 0;
+    }
 
   rootHome(event){
     if(!event) event = {};
